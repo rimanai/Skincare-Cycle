@@ -4,7 +4,162 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Skincare Cycle</title>
+    <title>Skin Food of The Day</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400&family=Quicksand:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   </head>
-  <body></body>
+  <body>
+    <div class="wrap">
+      <h1>SKIN CYCLING</h1>
+
+      <p>
+        If you're a skincare-junckie, the chances are, various active
+        ingridients can damage your skin. Skin Cycling, populirised by Dr
+        Whitney Bowe, a dermatologist, is a weekly skincare plan. This app
+        simply helps you tp keep track on which day you're using retinol, and
+        when it is time for your skin to recover. It was based on the
+        open-source information and does not provide a medical advice.
+      </p>
+
+      <h3>Pick all of your skincare products active ingridients</h3>
+      <div id="components">
+        <ul class="list-group list-group-flush" id="list">
+          <li class="list-group-item">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="firstCheckboxStretched"
+            />
+            <label
+              class="form-check-label stretched-link"
+              for="firstCheckboxStretched"
+              >Vitamin C</label
+            >
+          </li>
+          <li class="list-group-item">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="secondCheckboxStretched"
+            />
+            <label
+              class="form-check-label stretched-link"
+              for="secondCheckboxStretched"
+              >Retinol/Retinal</label
+            >
+          </li>
+          <li class="list-group-item">
+            <input
+              class="form-check-input me-1"
+              type="checkbox"
+              value=""
+              id="thirdCheckboxStretched"
+            />
+            <label
+              class="form-check-label stretched-link"
+              for="thirdCheckboxStretched"
+              >Niacinamide</label
+            >
+          </li>
+
+          <li class="list-group-item">
+            <input
+              class="form-check-input me-1"
+              type="checkbox"
+              value=""
+              id="fourthCheckboxStretched"
+            />
+            <label
+              class="form-check-label stretched-link"
+              for="fourthCheckboxStretched"
+              >AHA/BHA</label
+            >
+          </li>
+          <li class="list-group-item">
+            <input
+              class="form-check-input me-1"
+              type="checkbox"
+              value=""
+              id="5CheckboxStretched"
+            />
+            <label
+              class="form-check-label stretched-link"
+              for="5CheckboxStretched"
+              >Salicilic Acid</label
+            >
+          </li>
+          <li class="list-group-item">
+            <input
+              class="form-check-input me-1"
+              type="checkbox"
+              value=""
+              id="6CheckboxStretched"
+            />
+            <label
+              class="form-check-label stretched-link"
+              for="6CheckboxStretched"
+              >Snail Mucin</label
+            >
+          </li>
+          <li class="list-group-item">
+            <input
+              class="form-check-input me-1"
+              type="checkbox"
+              value=""
+              id="7CheckboxStretched"
+            />
+            <label
+              class="form-check-label stretched-link"
+              for="7CheckboxStretched"
+              >Ceramides</label
+            >
+          </li>
+          <li class="list-group-item">
+            <input
+              class="form-check-input me-1"
+              type="checkbox"
+              value=""
+              id="8CheckboxStretched"
+            />
+            <label
+              class="form-check-label stretched-link"
+              for="8CheckboxStretched"
+              >Hyaluronic Acid
+            </label>
+          </li>
+        </ul>
+      </div>
+
+      <button
+        type="button"
+        class="btn btn-primary d-flex justify-content-center"
+        id="button"
+      >
+        Create a SkinCare Cycle💫
+      </button>
+
+      <h2>Your SkinCare Schedule</h2>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Today: Retinol</li>
+        <li class="list-group-item">Tomorrow: Snail Mucin</li>
+        <li class="list-group-item">Wednesday: Ceramides</li>
+        <li class="list-group-item">Thursday: Snail Mucin</li>
+        <li class="list-group-item">Friday: AHA/BHA</li>
+      </ul>
+    </div>
+  </body>
 </html>
