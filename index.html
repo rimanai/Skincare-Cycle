@@ -19,7 +19,6 @@
     />
     <link rel="stylesheet" href="src/style.css" />
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script src="src/js.js"></script>
   </head>
   <body>
     <div class="wrap">
@@ -35,7 +34,7 @@
       </p>
 
       <h3>Pick all of your skincare products active ingridients</h3>
-      <div id="components">
+      <div class="form-check" id="components">
         <ul class="list-group list-group-flush" id="list">
           <li class="list-group-item">
             <input
@@ -143,17 +142,16 @@
             </label>
           </li>
         </ul>
+        <button
+          type="button"
+          class="btn btn-primary d-flex justify-content-center"
+          id="btn"
+        >
+          Create a SkinCare Cycle💫
+        </button>
       </div>
 
-      <button
-        type="button"
-        class="btn btn-primary d-flex justify-content-center"
-        id="button"
-      >
-        Create a SkinCare Cycle💫
-      </button>
-
-      <h2>Your SkinCare Schedule</h2>
+      <h2 id="sub">Your SkinCare Schedule</h2>
       <ul class="list-group list-group-flush">
         <li class="list-group-item">Today: Retinol</li>
         <li class="list-group-item">Tomorrow: Snail Mucin</li>
@@ -162,5 +160,6 @@
         <li class="list-group-item">Friday: AHA/BHA</li>
       </ul>
     </div>
+    <script src="src/js.js"></script>
   </body>
 </html>
